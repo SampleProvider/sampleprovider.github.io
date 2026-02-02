@@ -19,7 +19,7 @@
             }
         </style>
     </head>
-    <body class="horizontal" style="width: 100vw; height: 100vh;">
+    <body class="horizontal">
         <div class="vertical" style="padding: 8px; flex-shrink: 0;">
             <div style="font-size: 48px;">Maitian Sha</div>
         </div>
@@ -29,16 +29,25 @@
             <div style="border-top: 2px solid black;"></div>
             <div class="horizontal" style="gap: 8px;">
                 <div>
-                    <div style="font-size: 16px;">
-                        Member of a 2 person team.
-                        <br>
-                        We designed, built and programmed an autonomous robot car from scratch, using Nvidia Jetson Nano for real-time image processing, path planning, obstacle avoidance, and vehicle control.
-                        <br>
-                        2023 World championship 4th place (Future Engineer) at Panama, representing USA.
-                        <br>
-                        2022 World championship 2nd place (Future Engineer) at Germany, representing USA.
-                        <br>
-                        First time a US team got to the podium at International Finals in WRO history.
+                    <div style="font-size: 16px; display: flex; flex-direction: column; gap: 8px;">
+                        <div>
+                            Member of a 2 person team.
+                        </div>
+                        <div>
+                            We designed, built and programmed an autonomous robot car from scratch, using Nvidia Jetson Nano for real-time image processing, path planning, obstacle avoidance, and vehicle control.
+                        </div>
+                        <div>
+                            I designed and developed the image processing and control algorithms while my teammate handled the mechanical part of assembly and soldering.
+                        </div>
+                        <div>
+                            The important metrics of performance are accuracy and speed. High accuracy of object detection ensures that the car does not hit the walls or obstacles. Ties are broken by speed so it is also important to be fast.
+                        </div>
+                        <div>
+                            Our car uses a camera to detect its surroundings. The pixel colors of the image can vary drastically depending on the view angle and the lighting. Our solution was to convert the image into HSV (Hue Saturation Value) color space so the hue value would be much more stable. For high speed, we exclusively used numpy vectorization for array operations.
+                        </div>
+                        <div>
+                            One interesting thing is that the camera is aligned with the top of the walls, leading to the top of the walls being a flat line in the image. This greatly simplifies the image processing as then the top half of the image can be cropped out.
+                        </div>
                     </div>
                     <a href="https://github.com/definitely-nobody-is-here/SPARK_Future-Engineers_2022">2022 Github Repository: https://github.com/definitely-nobody-is-here/SPARK_Future-Engineers_2022</a>
                     <br>
@@ -47,8 +56,6 @@
                 <div>
                     <div style="font-size: 20px">2022 Demo Video:</div>
                     <iframe width="600" height="337" src="https://www.youtube.com/embed/4ExFMHKP9r8" title="SPARK WRO 2022 Future Engineers Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
                     <div style="font-size: 20px">2022 International Final Competition Video:</div>
                     <iframe width="600" height="337" src="https://www.youtube.com/embed/H7GwOodIgsA" title="WRO 2022 future engineers international final run 2 with pillars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div style="font-size: 16px;">The robot car should complete 3 laps in the shortest time while going on the left of green pillars and the right of red pillars</div>
@@ -59,14 +66,19 @@
             <div style="border-top: 2px solid black;"></div>
             <div class="horizontal" style="gap: 8px;">
                 <div>
-                    <div style="font-size: 16px;">
-                        Member of a 4 person team.
-                        <br>
-                        We designed and implemented path finding/battle strategies for virtual swarm robots to scavenge, manage resources, and execute offensive strategies against opponent.
-                        <br>
-                        We competed in the high school tournament as team SPAARK, placing 1st in 2025, 3rd in 2024, and 5th in 2023.
+                    <div style="font-size: 16px; display: flex; flex-direction: column; gap: 8px;">
+                        <div>
+                            Member of a 4 person team.
+                        </div>
+                        <div>
+                            We designed and implemented path finding/battle strategies for virtual swarm robots to scavenge, manage resources, and execute offensive strategies against opponent.
+                        </div>
+                        <div>
+                            We competed in the high school tournament as team SPAARK, placing 1st in 2025, 3rd in 2024, and 5th in 2023.
+                        </div>
                     </div>
                     <a href="https://battlecode.org/assets/files/postmortem-2025-spaark.pdf">2025 SPAARK Postmortem</a>
+                    <a href="https://github.com/erikji/battlecode25">2025 Github Link</a>
                 </div>
                 <div>
                     <div style="font-size: 20px">Final Tournament Video:</div>
